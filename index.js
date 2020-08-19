@@ -33,19 +33,19 @@ const client = new Discord.Client();
 ////////////
 
 client.on('message', message => {
-  if (message.content === prefix + '30d') {
+  if (message.content === prefix + '31d') {
     message.channel.send('#daily')
   }
-  if (message.content === prefix + '30c') {
+  if (message.content === prefix + '31c') {
     message.channel.send('#credits')
   }
-  if (message.content === prefix + '30p') {
+  if (message.content === prefix + '31p') {
     message.channel.send('#profile')
   }
   if (message.content === prefix + 'r1') {
     message.channel.send("#rep " + "<@" + myid + ">")
   }
-  if (message.content.startsWith(prefix + '30s')) {
+  if (message.content.startsWith(prefix + '31s')) {
     var text = message.content.split(' ').slice(1).join(' ');
     message.channel.send(text);
   }
@@ -165,11 +165,11 @@ client.on('message', message => {
     }
   }
 
-  if (message.content === prefix + '30spam') {
+  if (message.content === prefix + '31spam') {
     let count = 0;
     let ecount = 0;
     for (let x = 0; x < 40000; x++) {
-      message.channel.send(`**$30spam**[ " ${x} " ]****`)
+      message.channel.send(`**$31spam**[ " ${x} " ]****`)
         .then(m => {
           count++;
         })
